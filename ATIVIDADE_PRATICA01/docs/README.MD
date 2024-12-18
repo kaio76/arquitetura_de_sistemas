@@ -26,7 +26,7 @@ Primeiro, clone o repositório para o seu ambiente local:
 ```bash
 
 git clone https://github.com/kaio76/arquitetura_de_sistemas/tree/main/ATIVIDADE_PRATICA01
-
+´´´
 2. Instale as Dependências
 Instale as bibliotecas e dependências necessárias utilizando o pip:
 
