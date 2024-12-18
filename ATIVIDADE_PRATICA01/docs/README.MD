@@ -43,6 +43,8 @@ uvicorn main:app --reload
 ```
 Isso iniciará a API no endereço http://localhost:8000. Agora você pode acessar e testar a API localmente.
 
+---
+
 ## 📚 Exemplos de Uso das Rotas ## 
 
 A API oferece as seguintes rotas principais para interação:
@@ -75,20 +77,21 @@ Método: GET
 URL: http://localhost:8000/busca_vendas/{id_venda}
 Exemplo: http://localhost:8000/busca_vendas/1
 Resposta (sucesso)
-json
-Copiar código
+
+```
 {
   "id_venda": 1,
   "produto": "Produto X",
   "quantidade": 2,
   "preco": 100.0
 }
+```
 Resposta (venda não encontrada)
-json
-Copiar código
+```
 {
   "detail": "Venda não localizada"
 }
+```
 ### 3. Atualizar uma Venda (PUT) 🔄
 
 Requisição
@@ -96,17 +99,16 @@ Método: PUT
 URL: http://localhost:8000/vendas/{id_venda}
 Exemplo: http://localhost:8000/vendas/1
 Body (JSON):
-json
-Copiar código
+```
 {
   "id_venda": 1,
   "produto": "Produto Y",
   "quantidade": 3,
   "preco": 150.0
 }
+```
 Resposta (sucesso)
-json
-Copiar código
+```
 {
   "mensagem": "Venda atualizada com sucesso",
   "venda": {
@@ -116,6 +118,7 @@ Copiar código
     "preco": 150.0
   }
 }
+```
 ### 4. Excluir uma Venda (DELETE) ❌
 
 Requisição
@@ -123,18 +126,20 @@ Método: DELETE
 URL: http://localhost:8000/vendas/{id_venda}
 Exemplo: http://localhost:8000/vendas/1
 Resposta (sucesso)
-json
-Copiar código
+```
 {
   "mensagem": "Venda excluída com sucesso"
 }
-
+```
 📜 Tecnologias Utilizadas
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 Python 🐍
+
 FastAPI 🚀
+
 Uvicorn 🦄
+
 Pydantic 📦
 
 🔧 Considerações Finais
