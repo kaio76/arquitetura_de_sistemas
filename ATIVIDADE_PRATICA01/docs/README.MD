@@ -43,10 +43,11 @@ uvicorn main:app --reload
 ```
 Isso iniciará a API no endereço http://localhost:8000. Agora você pode acessar e testar a API localmente.
 
-📚 Exemplos de Uso das Rotas
+## 📚 Exemplos de Uso das Rotas ## 
+
 A API oferece as seguintes rotas principais para interação:
 
-1. Adicionar uma Venda (POST) 📝
+### 1. Adicionar uma Venda (POST) 📝
 
 Requisição
 Método: POST
@@ -67,7 +68,8 @@ Resposta (sucesso)
       "mensagem": "Venda adicionada com sucesso"
     }
 ```
-2. Buscar uma Venda por ID (GET) 🔍
+### 2. Buscar uma Venda por ID (GET) 🔍
+
 Requisição
 Método: GET
 URL: http://localhost:8000/busca_vendas/{id_venda}
@@ -87,7 +89,8 @@ Copiar código
 {
   "detail": "Venda não localizada"
 }
-3. Atualizar uma Venda (PUT) 🔄
+### 3. Atualizar uma Venda (PUT) 🔄
+
 Requisição
 Método: PUT
 URL: http://localhost:8000/vendas/{id_venda}
@@ -113,7 +116,8 @@ Copiar código
     "preco": 150.0
   }
 }
-4. Excluir uma Venda (DELETE) ❌
+### 4. Excluir uma Venda (DELETE) ❌
+
 Requisição
 Método: DELETE
 URL: http://localhost:8000/vendas/{id_venda}
