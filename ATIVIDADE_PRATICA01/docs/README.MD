@@ -23,7 +23,7 @@ A API permite que desenvolvedores integrem esse sistema em outros aplicativos ou
 
 Primeiro, clone o repositório para o seu ambiente local:
 
-``bash
+```bash
 
 git clone https://github.com/kaio76/arquitetura_de_sistemas/tree/main/ATIVIDADE_PRATICA01
 
@@ -47,6 +47,7 @@ Isso iniciará a API no endereço http://localhost:8000. Agora você pode acessa
 A API oferece as seguintes rotas principais para interação:
 
 1. Adicionar uma Venda (POST) 📝
+
 Requisição
 Método: POST
 URL: http://localhost:8000/vendas/
@@ -62,10 +63,10 @@ Copiar código
 Resposta (sucesso)
 json
 Copiar código
-{
-  "id_venda": 0,
-  "mensagem": "Venda adicionada com sucesso"
-}
+    {
+      "id_venda": 0,
+      "mensagem": "Venda adicionada com sucesso"
+    }
 2. Buscar uma Venda por ID (GET) 🔍
 Requisição
 Método: GET
