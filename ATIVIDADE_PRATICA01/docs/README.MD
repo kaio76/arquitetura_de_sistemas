@@ -23,23 +23,20 @@ A API permite que desenvolvedores integrem esse sistema em outros aplicativos ou
 
 Primeiro, clone o repositório para o seu ambiente local:
 
-```bash
-
+```
 git clone https://github.com/kaio76/arquitetura_de_sistemas/tree/main/ATIVIDADE_PRATICA01
 ```
-2. Instale as Dependências
+###2. **Instale as Dependências**
 Instale as bibliotecas e dependências necessárias utilizando o pip:
 
-bash
-Copiar código
+```
 cd ATIVIDADE_PRATICA01
 pip install -r requirements.txt
-
-3. Execute o Servidor
+```
+###3. **Execute o Servidor**
 Para rodar a API localmente, execute o seguinte comando:
 
-bash
-Copiar código
+
 uvicorn main:app --reload
 Isso iniciará a API no endereço http://localhost:8000. Agora você pode acessar e testar a API localmente.
 
