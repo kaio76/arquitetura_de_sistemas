@@ -26,18 +26,21 @@ Primeiro, clone o repositório para o seu ambiente local:
 ```
 git clone https://github.com/kaio76/arquitetura_de_sistemas/tree/main/ATIVIDADE_PRATICA01
 ```
-###2. **Instale as Dependências**
+### 2. **Instale as Dependências**
+
 Instale as bibliotecas e dependências necessárias utilizando o pip:
 
 ```
 cd ATIVIDADE_PRATICA01
 pip install -r requirements.txt
 ```
-###3. **Execute o Servidor**
+### 3. **Execute o Servidor**
+
 Para rodar a API localmente, execute o seguinte comando:
 
-
+```
 uvicorn main:app --reload
+```
 Isso iniciará a API no endereço http://localhost:8000. Agora você pode acessar e testar a API localmente.
 
 📚 Exemplos de Uso das Rotas
@@ -49,21 +52,21 @@ Requisição
 Método: POST
 URL: http://localhost:8000/vendas/
 Body (JSON):
-json
-Copiar código
+```
 {
   "id_venda": 1,
   "produto": "Produto X",
   "quantidade": 2,
   "preco": 100.0
 }
+```
 Resposta (sucesso)
-json
-Copiar código
+```
     {
       "id_venda": 0,
       "mensagem": "Venda adicionada com sucesso"
     }
+```
 2. Buscar uma Venda por ID (GET) 🔍
 Requisição
 Método: GET
